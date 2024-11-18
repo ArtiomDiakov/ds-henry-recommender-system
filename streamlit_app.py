@@ -12,7 +12,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 
 # Load the dataset
-@st.cache
+@st.cache_data
 def load_data():
     return pd.read_parquet('reviews_dataset.parquet')
 
