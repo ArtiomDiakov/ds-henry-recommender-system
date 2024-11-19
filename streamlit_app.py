@@ -14,7 +14,8 @@ from sklearn.feature_extraction.text import TfidfTransformer
 # Load the dataset
 @st.cache_data
 def load_data():
-    return pd.read_parquet('reviews_dataset.parquet')
+    return pd.read_parquet('df_restaurants_cleaned_with_sentiment.parquet')
+st.set_page_config(initial_sidebar_state="expanded")
 
 df = load_data()
 
@@ -36,24 +37,14 @@ if selected_restaurant:
     st.write(f"Selected Restaurant: **{selected_restaurant}**")
     restaurant_data = df[df['business_name'] == selected_restaurant]
     
-    # Text analysis (placeholder logic)
-    def analyze_reviews(texts):
-        # Example: Return scores for 5 characteristics
-        return {
-            "Cleanliness": 3.5,
-            "Customer Service": 4.2,
-            "Food Quality": 4.0,
-            "Presentation": 3.8,
-            "Wait Time": 3.2
-        }
-    
-    scores = analyze_reviews(restaurant_data['text'])
+    # Calcular promedios de las características
+    aggregated_scores = restaurant_data['scores'].apply(pd.Series).mean()
 
-    # Spider chart
-    categories = list(scores.keys())
-    values = list(scores.values())
+    # Crear el gráfico de radar
+    categories = list(aggregated_scores.index)
+    values = list(aggregated_scores.values)
 
-    # Close the circle for radar chart
+    # Cerrar el círculo del gráfico
     categories += categories[:1]
     values += values[:1]
 
@@ -62,7 +53,7 @@ if selected_restaurant:
         theta=categories,
         line_close=True,
         title="Key Areas to Improve",
-        range_r=[0, 5]
+        range_r=[0, 1]
     )
     fig.update_traces(fill='toself')
 
