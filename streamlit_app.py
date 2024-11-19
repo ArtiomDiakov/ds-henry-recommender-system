@@ -15,6 +15,7 @@ from sklearn.feature_extraction.text import TfidfTransformer
 @st.cache_data
 def load_data():
     return pd.read_parquet('df_restaurants_cleaned_with_sentiment.parquet')
+
 st.set_page_config(initial_sidebar_state="expanded")
 
 df = load_data()
@@ -53,7 +54,7 @@ if selected_restaurant:
         theta=categories,
         line_close=True,
         title="Key Areas to Improve",
-        range_r=[0, 1]
+        range_r=[0, max(values)]
     )
     fig.update_traces(fill='toself')
 
