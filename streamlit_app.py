@@ -62,6 +62,7 @@ st.markdown("""
         width: 60%;  /* Hacemos el recuadro más estrecho */
         margin-top: 20px;
         font-size:24px;
+        margin:auto;
     }
 
     .about-title {
@@ -71,6 +72,7 @@ st.markdown("""
         color: #ffffff;  
         margin-top: 50px;
         margin-bottom: 20px;
+        text-align:center;
     }
 
     iframe {
@@ -83,35 +85,22 @@ st.markdown("""
         display: block;
         margin: 0 auto;
         width: 100%;  /* Aumentamos el tamaño del logo */
-    }
+    }    
+
     </style>
 """, unsafe_allow_html=True)
 
 # Título principal de la página
-st.title("ANONIMOS NASAE 🚀")
+st.title("Anonymous NASAe 🚀")
 
 # Espacio para "About Us"
-st.markdown("<div class='about-title'>About Us😎</div>", unsafe_allow_html=True)
+st.markdown("<div class='about-title'>About US😎</div>", unsafe_allow_html=True)
 
-# Recuadro de "Sobre nosotros" en un recuadro amarillo
-col1, col2 = st.columns([3, 1])
+# # Recuadro de "Sobre nosotros" en un recuadro amarillo
+# col1, col2 = st.columns([1,1])
 
-with col1:
-    st.markdown("<div class='box'>Somos una consultora de datos formada por cinco miembros, provenientes de áreas variadas, pero con un mismo objetivo y pasión: la mejora de procesos de negocio. Estamos especializados en proporcionar soluciones estratégicas basadas en análisis de datos. Nuestro objetivo es apoyar a nuestros clientes en la toma de decisiones clave que impulsen su crecimiento y los posicionen como líderes en sus respectivas industrias. Trabajamos con negocios de diversos sectores, incluyendo restaurantes y comercios afines, ayudándolos a optimizar sus operaciones, identificar oportunidades de mercado y mejorar la experiencia de sus clientes mediante el uso inteligente de los datos.</div>", unsafe_allow_html=True)
+#with col1:
+st.markdown("<div class='box'>We are a data consultancy made up of five members, coming from varied areas, but with the same objective and passion: improving business processes. We are specialized in providing strategic solutions based on data analysis. Our goal is to support our clients in making key decisions that drive their growth and position them as leaders in their respective industries. We work with businesses from various sectors, including restaurants and related businesses, helping them optimize their operations, identify market opportunities and improve their customer experience through the intelligent use of data.</div>", unsafe_allow_html=True)
 
-with col2:
-    st.image("imagenes_web/logo.png",caption= "Anonimos NASAE", use_container_width=True, width=300)  # Tamaño ajustado del logo
-
-# Espacio para el dashboard
-st.subheader("Dashboard Interactivo")
-
-# Inserción del dashboard de Power BI mediante iframe
-st.components.v1.html("""
-    <iframe title="GOOGLE MAPS & YELP PORJECT 001 (2)" 
-        width="100%" 
-        height="800" 
-        src="https://app.powerbi.com/view?r=eyJrIjoiMDdhMzdkMGItZDE3Ny00MWRiLTg2NjgtYTI3N2MwMWJkZGQ0IiwidCI6ImZjMDA1NDdhLTI0YmItNGU0Zi05ZDYxLTczZmNhNWViOWRmMyIsImMiOjR9&pageName=73ec77b604824e04f8eb" 
-        frameborder="0" 
-        allowfullscreen="true">
-    </iframe>
-""", height=800)
+#with col2:
+#st.image("imagenes_web/logo.png",caption= "Anonimos NASAE", use_container_width=True, width=300)  # Tamaño ajustado del logo
