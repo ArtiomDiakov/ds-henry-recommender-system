@@ -61,7 +61,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Título principal de la página
-st.title("Anonymous NASAe")
+st.title("ANONIMOS NASAE")
 
 # Imagen centrada con st.image
 st.markdown('<div class="centered">', unsafe_allow_html=True)
@@ -69,7 +69,7 @@ st.image("imagenes_web/logo.png")
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Espacio para "About Us"
-st.markdown("<div class='about-title'>About</div>", unsafe_allow_html=True)
+#st.markdown("<div class='about-title'>About</div>", unsafe_allow_html=True)
 
 # Texto en recuadro amarillo
 st.markdown("""
