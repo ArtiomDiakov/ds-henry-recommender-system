@@ -5,7 +5,7 @@ dashboard_url = "https://app.powerbi.com/view?r=eyJrIjoiMDdhMzdkMGItZDE3Ny00MWRi
 iframe_code = f"""
 <iframe title="GOOGLE MAPS & YELP PORJECT 001 (2)" 
     width="100%" 
-    height="600" 
+    height="800" 
     src="{dashboard_url}" 
     frameborder="0" 
     allowFullScreen="true">

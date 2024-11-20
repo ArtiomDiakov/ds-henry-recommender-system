@@ -74,24 +74,29 @@ st.markdown("""
         margin-bottom: 20px;
         text-align:center;
     }
-
-    iframe {
-        width: 100%;  /* El iframe ocupa todo el ancho disponible */
-        height: 800px;  /* Ajusta la altura a 800px */
-        border: none;  /* Sin bordes extra en el iframe */
+    
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        ;
     }
-
-    .logo-image {
-        display: block;
-        margin: 0 auto;
-        width: 100%;  /* Aumentamos el tamaño del logo */
-    }    
-
     </style>
 """, unsafe_allow_html=True)
 
 # Título principal de la página
 st.title("Anonymous NASAe 🚀")
+
+
+# Imagen centrada
+st.markdown('<div class="image-container">', unsafe_allow_html=True)
+st.image("imagenes_web/logo.png", caption="Anonimos NASAe", width=300)
+st.markdown('</div>', unsafe_allow_html=True)
+
+
+#st.image("imagenes_web/logo.png",caption= "Anonimos NASAE", use_container_width=True, width=100)  # Tamaño ajustado del logo
+
 
 # Espacio para "About Us"
 st.markdown("<div class='about-title'>About US😎</div>", unsafe_allow_html=True)
@@ -103,4 +108,3 @@ st.markdown("<div class='about-title'>About US😎</div>", unsafe_allow_html=Tru
 st.markdown("<div class='box'>We are a data consultancy made up of five members, coming from varied areas, but with the same objective and passion: improving business processes. We are specialized in providing strategic solutions based on data analysis. Our goal is to support our clients in making key decisions that drive their growth and position them as leaders in their respective industries. We work with businesses from various sectors, including restaurants and related businesses, helping them optimize their operations, identify market opportunities and improve their customer experience through the intelligent use of data.</div>", unsafe_allow_html=True)
 
 #with col2:
-#st.image("imagenes_web/logo.png",caption= "Anonimos NASAE", use_container_width=True, width=300)  # Tamaño ajustado del logo
