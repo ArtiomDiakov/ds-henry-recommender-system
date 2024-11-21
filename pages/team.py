@@ -7,11 +7,10 @@ st.markdown(
     """
     <style>
         .st-emotion-cache-6qob1r {
-        background-color: #c9c9c9;
-    }
-        about-us{
-            margin:auto;
-            text-align:center;
+            background-color: #c9c9c9;
+        }
+        #about-us{
+            text-align: center;
         }
         div[data-testid="stColumn"]
         {  
@@ -43,7 +42,7 @@ st.markdown(
     """,unsafe_allow_html=True
 )
 
-st.title("About Us")
+st.title('About Us')
 
 col1, col2, col3,col4,col5 = st.columns(5)
 
