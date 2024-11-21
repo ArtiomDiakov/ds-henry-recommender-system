@@ -2,11 +2,12 @@ import streamlit as st
 
 # Configuración de la página
 st.set_page_config(
-    page_title="PROJECT 001",
+    page_title="NASAE PROJECT",
     page_icon="🚀",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
+
 
 # Estilos personalizados
 st.markdown("""
@@ -81,9 +82,8 @@ st.markdown('</div>', unsafe_allow_html=True)
 
 # Espacio para "About Us"
 #st.markdown("<div class='about-title'>About</div>", unsafe_allow_html=True)
-
+st.markdown('<h2 class="centered"> Quienes Somos?</h2>', unsafe_allow_html=True)
 # Texto en recuadro amarillo
 st.markdown("""
 <div class='box'>
-ANÓNIMOS NASAE is a company passionate about transforming data into powerful tools for business success. We specialize in creating tailored solutions that empower organizations to make informed and strategic decisions, maximizing their market impact. By combining technological innovation, advanced data analysis, and intuitive visualizations, we turn information into actionable insights that drive growth and solidify leadership. At ANÓNIMOS NASAE, we believe data is the key to building a smarter future. 🚀</div>
-""", unsafe_allow_html=True)
+ANÓNIMOS NASAE es una empresa apasionada por transformar datos en poderosas herramientas para el éxito empresarial. Nos especializamos en la creación de soluciones personalizadas que permitan a las organizaciones tomar decisiones estratégicas e informadas, maximizando su impacto en el mercado. Al combinar innovación tecnológica, análisis de datos avanzado y visualizaciones intuitivas, convertimos la información en conocimientos prácticos que impulsan el crecimiento y solidifican el liderazgo. En ANÓNIMOS NASAE creemos que los datos son la clave para construir un futuro más inteligente. 🚀</div>""", unsafe_allow_html=True)

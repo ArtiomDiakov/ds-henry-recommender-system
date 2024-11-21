@@ -9,8 +9,15 @@ st.markdown(
         .st-emotion-cache-6qob1r {
             background-color: #c9c9c9;
         }
-        #about-us{
+        #contactos{
             text-align: center;
+        }
+        .role{
+            font-size:20px;
+            padding:0;
+            [data-testid="stHeaderActionElements"]{
+                display:none;
+            }
         }
         div[data-testid="stColumn"]
         {  
@@ -37,12 +44,13 @@ st.markdown(
             div[data-testid="stImageCaption"]{
                 font-size: 24px;
             }
+
         }
     </style>
     """,unsafe_allow_html=True
 )
 
-st.title('About Us')
+st.title('Contactos')
 
 col1, col2, col3,col4,col5 = st.columns(5)
 
@@ -50,6 +58,7 @@ with col1:
     # Imagen centrada con st.image
     st.markdown('<div class="centered">', unsafe_allow_html=True)
     st.image("imagenes_web/agostina.png", use_container_width=True, caption="Agostina")
+    st.markdown("<h3 class='role'>ML Engineer</h3>", unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
 
@@ -76,6 +85,7 @@ with col2:
     # Imagen centrada con st.image
     st.markdown('<div class="centered">', unsafe_allow_html=True)
     st.image("imagenes_web/artem.png", caption="Artiom")
+    st.markdown("<h3 class='role'>ML Engineer</h3>", unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     st.markdown(
     """<a href="https://www.linkedin.com/in/artiom-diakov/">
@@ -97,29 +107,8 @@ with col2:
 with col3:
     # Imagen centrada con st.image
     st.markdown('<div class="centered">', unsafe_allow_html=True)
-    st.image("imagenes_web/esteban.png", caption= "Esteban")
-    st.markdown('</div>', unsafe_allow_html=True)
-    st.markdown(
-    """<a href="https://www.linkedin.com/in/andrés-esteban-gutierrez-nivia-9035a62b7/">
-    <img src="data:image/png;base64,{}" width="50">
-    </a>""".format(
-        base64.b64encode(open("imagenes_web/linkedin_logo.png", "rb").read()).decode()
-    ),
-    unsafe_allow_html=True,
-)
-    
-    st.markdown(
-    """<a href="https://github.com/aestebangnivia23">
-    <img src="data:image/png;base64,{}" width="50">
-    </a>""".format(
-        base64.b64encode(open("imagenes_web/github_logo.png", "rb").read()).decode()
-    ),
-    unsafe_allow_html=True,
-)
-with col4:
-    # Imagen centrada con st.image
-    st.markdown('<div class="centered">', unsafe_allow_html=True)
     st.image("imagenes_web/nico.png", caption="Nicolas")
+    st.markdown("<h3 class='role'>Data Engineer</h3>", unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     st.markdown(
     """<a href="https://www.linkedin.com/in/nicolas-aballay-6a3543335/">
@@ -138,10 +127,35 @@ with col4:
     ),
     unsafe_allow_html=True,
 )
+with col4:
+    # Imagen centrada con st.image
+    st.markdown('<div class="centered">', unsafe_allow_html=True)
+    st.image("imagenes_web/esteban.png", caption= "Esteban")
+    st.markdown("<h3 class='role'>Data Analyst</h3>", unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown(
+    """<a href="https://www.linkedin.com/in/andrés-esteban-gutierrez-nivia-9035a62b7/">
+    <img src="data:image/png;base64,{}" width="50">
+    </a>""".format(
+        base64.b64encode(open("imagenes_web/linkedin_logo.png", "rb").read()).decode()
+    ),
+    unsafe_allow_html=True,
+)
+    
+    st.markdown(
+    """<a href="https://github.com/aestebangnivia23">
+    <img src="data:image/png;base64,{}" width="50">
+    </a>""".format(
+        base64.b64encode(open("imagenes_web/github_logo.png", "rb").read()).decode()
+    ),
+    unsafe_allow_html=True,
+)
+    
 with col5:
     # Imagen centrada con st.image
     st.markdown('<div class="centered">', unsafe_allow_html=True)
     st.image("imagenes_web/santino.png", caption="Santino")
+    st.markdown("<h3 class='role'>Data Analyst</h3>", unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     st.markdown(
     """<a href="https://www.linkedin.com/in/santino-martín-rocchietti-7aa0b7318/">
