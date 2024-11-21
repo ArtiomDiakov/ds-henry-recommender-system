@@ -1,6 +1,6 @@
 [theme]
-primaryColor = "#FFFFFF"  # Color amarillo neón
+primaryColor = "#5e17eb"  # Color amarillo neón
 backgroundColor = "#FFFFFF"
 secondaryBackgroundColor = "#FFFFFF"
 textColor = "#000000"
-font = "Roboto"
+font = "sans serif"

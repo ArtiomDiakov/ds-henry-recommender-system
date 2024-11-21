@@ -28,7 +28,7 @@ st.markdown("""
     }
 
     .box {
-        border: 2px solid #FFD700;  /* amarillo neón */
+        border: 2px solid #5e17eb;  /* amarillo neón */
         border-radius: 15px;
         padding: 20px;
         width: 60%;  /* Hacemos el recuadro más estrecho */
@@ -57,6 +57,17 @@ st.markdown("""
         margin:auto;
         max-width:300px;
        }
+       
+    [data-testid=stSidebarContent] {
+        background-color: #dbdbdb;
+    }
+        stSidebarContent {
+        background-color: #dbdbdb;
+    }
+        .st-emotion-cache-6qob1r {
+        background-color: #c9c9c9;
+    }
+
     </style>
 """, unsafe_allow_html=True)
 
@@ -74,9 +85,5 @@ st.markdown('</div>', unsafe_allow_html=True)
 # Texto en recuadro amarillo
 st.markdown("""
 <div class='box'>
-We are a data consultancy made up of five members, coming from varied areas, but with the same objective and passion: improving business processes. 
-We are specialized in providing strategic solutions based on data analysis. Our goal is to support our clients in making key decisions that drive their 
-growth and position them as leaders in their respective industries. We work with businesses from various sectors, including restaurants and related 
-businesses, helping them optimize their operations, identify market opportunities and improve their customer experience through the intelligent use of data.
-</div>
+ANÓNIMOS NASAE is a company passionate about transforming data into powerful tools for business success. We specialize in creating tailored solutions that empower organizations to make informed and strategic decisions, maximizing their market impact. By combining technological innovation, advanced data analysis, and intuitive visualizations, we turn information into actionable insights that drive growth and solidify leadership. At ANÓNIMOS NASAE, we believe data is the key to building a smarter future. 🚀</div>
 """, unsafe_allow_html=True)

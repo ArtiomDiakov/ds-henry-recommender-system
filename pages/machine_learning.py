@@ -4,12 +4,22 @@ import plotly.express as px
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 
+
+
 # Load the dataset
 @st.cache_data
 def load_data():
     return pd.read_parquet('df_restaurants_cleaned_with_sentiment.parquet')
 
 st.set_page_config(initial_sidebar_state="expanded")
+
+st.markdown("""
+    <style>
+    .st-emotion-cache-6qob1r {
+        background-color: #c9c9c9;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 df = load_data()
 
