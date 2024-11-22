@@ -9,7 +9,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Incrustar el iframe del dashboard
-dashboard_url = "https://app.powerbi.com/view?r=eyJrIjoiYjNkNTRiZTEtNTM1Yi00NGZjLWJjYTItYjkwNDQxOWJhYjM0IiwidCI6ImZjMDA1NDdhLTI0YmItNGU0Zi05ZDYxLTczZmNhNWViOWRmMyIsImMiOjR9&pageName=73ec77b604824e04f8eb" 
+dashboard_url = "https://app.powerbi.com/view?r=eyJrIjoiOTk3MzFkNzYtYmJhZS00YmUxLTllYjctM2UyNjdmYWM3OWJhIiwidCI6ImZjMDA1NDdhLTI0YmItNGU0Zi05ZDYxLTczZmNhNWViOWRmMyIsImMiOjR9" 
 iframe_code = f"""
 <iframe title="GOOGLE MAPS & YELP PORJECT 001 (2)" 
     width="100%" 
